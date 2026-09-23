@@ -64,8 +64,8 @@
   border-right: 0.12em solid var(--color-brand-brown);
   animation:
     typing 1.6s steps(15, end) forwards,
-    blink-caret 0.75s step-end infinite,
-    remove-caret 0s linear 1.6s forwards;
+    blink-caret 0.75s step-end 3,
+    remove-caret 0s linear 3.85s forwards;
 }
 
 .hero-subtitle,
@@ -76,23 +76,62 @@
 }
 
 .hero-subtitle {
-  animation-delay: 1.6s;
+  animation-delay: 3.85s;
+}
+
+
+.skills-marquee {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+  gap: 0.75rem;
+  animation: skills-scroll 36s linear infinite;
+}
+
+.skill-card {
+  flex: 0 0 170px;
+}
+
+.skills-track-reverse {
+  animation-name: skills-scroll-reverse;
+}
+
+@keyframes skills-scroll {
+  to {
+    transform: translateX(calc(-50% - 0.375rem));
+  }
+}
+
+@keyframes skills-scroll-reverse {
+  from {
+    transform: translateX(calc(-50% - 0.375rem));
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .hero-action:nth-child(1) {
-  animation-delay: 1.6s;
+  animation-delay: 3.85s;
 }
 
 .hero-action:nth-child(2) {
-  animation-delay: 1.72s;
+  animation-delay: 3.97s;
 }
 
 .hero-action:nth-child(3) {
-  animation-delay: 1.84s;
+  animation-delay: 4.09s;
 }
 
 .hero-action:nth-child(4) {
-  animation-delay: 1.96s;
+  animation-delay: 4.21s;
 }
 
 @keyframes hero-content-in {
@@ -132,6 +171,10 @@
     animation: none;
     opacity: 1;
     transform: none;
+  }
+
+  .skills-track {
+    animation: none;
   }
 }
 

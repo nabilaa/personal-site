@@ -67,51 +67,59 @@ export const skills = [
   },
   {
     id: 5,
-    name: "AWS",
-    desc: "Cloud Platform",
-    dad: "400",
-  },
-  {
-    id: 6,
-    name: "Docker",
-    desc: "Containerization",
-    dad: "500",
-  },
-  {
-    id: 7,
-    name: "Terraform",
-    desc: "Infrastructure as Code",
-    dad: "600",
-  },
-
-  {
-    id: 8,
     name: "JUnit",
     desc: "Testing Framework",
     dad: "900",
   },
   {
-    id: 9,
+    id: 6,
     name: "Mockito",
     desc: "Mocking Framework",
     dad: "1000",
+  }
+];
+
+export const tools = [
+  {
+    id: 5,
+    name: "AWS",
+    desc: "Cloud Platform",
+    dad: "400",
   },
   {
-    id: 10,
+    id: 1,
+    name: "Docker",
+    desc: "Containerization",
+    dad: "500",
+  },
+  {
+    id: 2,
+    name: "Terraform",
+    desc: "Infrastructure as Code",
+    dad: "600",
+  },
+  {
+    id: 3,
     name: "IntelliJ IDEA",
     desc: "IDE",
     dad: "1200",
   },
   {
-    id: 11,
+    id: 4,
     name: "Postman",
     desc: "API Testing",
     dad: "1100",
   },
   {
-    id: 12,
+    id: 5,
     name: "Jira",
     desc: "Project Management",
+    dad: "1300",
+  },
+  {
+    id: 6,
+    name: "Confluence",
+    desc: "Documentation",
     dad: "1300",
   }
 ];
