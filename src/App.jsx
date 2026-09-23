@@ -14,8 +14,8 @@ import {
   Workflow,
 } from 'lucide-react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import heroImg from './assets/hero.jpg'
-import { experiences, skills, tools} from './data.js'
+import heroImg from '/assets/hero-desktop.jpg'
+import { experiences, skills} from './data.js'
 import './App.css'
 
 const toolIcons = {
@@ -29,7 +29,9 @@ const toolIcons = {
   'GitHub Actions': GitBranch,
   JUnit: TestTube,
   Mockito: FlaskConical,
+  'IntelliJ IDEA': CodeXml,
   Postman: Send,
+  Jira: Workflow,
 }
 
 function App() {
@@ -39,23 +41,23 @@ function App() {
     <>
       <section id="center">
         <div id="home" className="hero">
-          <div className="hero-content relative">
-            <img src={heroImg} alt="Hero" className="hero-image block h-auto w-full max-w-[1100px] ml-auto object-cover" />
+          <div className="hero-content relative w-full">
+            <img src={heroImg} alt="Hero" className="hero-image block h-auto w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent"></div>
             <div className="absolute inset-0 z-10 flex flex-col items-start justify-center px-6 text-left text-white">
-              <p className="text-brand-brown text-5xl/tight font-bold mb-6">Hi, I'm Nabilah</p>
-              <p className="text-brand-brown text-base/loose mb-6 opacity-60">A software engineer focused on backend development.</p>
-              <div className="flex items-center gap-4">
-                <a href="/assets/Nabilah_Backend_Engineer_CV.pdf" download className="flex items-center gap-2 rounded-md border border-transparent bg-brand-brown px-2 py-2 text-brand-cream transition-colors hover:border-brand-brown hover:bg-brand-cream hover:text-brand-brown">
+              <p className="typewriter text-brand-brown text-5xl/tight font-bold mb-6">Hi, I'm Nabilah</p>
+              <p className="hero-subtitle text-brand-brown text-base/loose mb-6 opacity-60">A software engineer focused on backend development.</p>
+              <div className="hero-actions flex items-center gap-4">
+                <a href="/assets/Nabilah_Backend_Engineer_CV.pdf" download className="hero-action flex items-center gap-2 rounded-md border border-transparent bg-brand-brown px-2 py-2 text-brand-cream transition-colors hover:border-brand-brown hover:bg-brand-cream hover:text-brand-brown">
                   <Download size={18} aria-hidden="true" />
                 </a>
-                <a href="https://github.com/nabilaa" target="_blank" rel="noreferrer" aria-label="GitHub" className="flex items-center gap-2 rounded-md border border-transparent bg-brand-brown px-2 py-2 text-brand-cream transition-colors hover:border-brand-brown hover:bg-brand-cream hover:text-brand-brown">
+                <a href="https://github.com/nabilaa" target="_blank" rel="noreferrer" aria-label="GitHub" className="hero-action flex items-center gap-2 rounded-md border border-transparent bg-brand-brown px-2 py-2 text-brand-cream transition-colors hover:border-brand-brown hover:bg-brand-cream hover:text-brand-brown">
                   <FaGithub size={18} aria-hidden="true" />
                 </a>
-                <a href="https://www.linkedin.com/in/snabilah" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="flex items-center gap-2 rounded-md border border-transparent bg-brand-brown px-2 py-2 text-brand-cream transition-colors hover:border-brand-brown hover:bg-brand-cream hover:text-brand-brown">
+                <a href="https://www.linkedin.com/in/snabilah" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hero-action flex items-center gap-2 rounded-md border border-transparent bg-brand-brown px-2 py-2 text-brand-cream transition-colors hover:border-brand-brown hover:bg-brand-cream hover:text-brand-brown">
                   <FaLinkedin size={18} aria-hidden="true" />
                 </a>
-                <a href="mailto:shalihah.nabilah@gmail.com" aria-label="Email me" className="flex items-center gap-2 rounded-md border border-transparent bg-brand-brown px-2 py-2 text-brand-cream transition-colors hover:border-brand-brown hover:bg-brand-cream hover:text-brand-brown">
+                <a href="mailto:shalihah.nabilah@gmail.com" aria-label="Email me" className="hero-action flex items-center gap-2 rounded-md border border-transparent bg-brand-brown px-2 py-2 text-brand-cream transition-colors hover:border-brand-brown hover:bg-brand-cream hover:text-brand-brown">
                   <Mail size={18} aria-hidden="true" />
                 </a>
               </div>
@@ -65,9 +67,9 @@ function App() {
         </div>
 
         {/* Experience Section */}
-          <div id="experience" className="border border-brand-border mt-12 bg-brand-cream px-[5%] py-10 text-brand-brown md:px-[5%] md:py-10">
+          <div id="experience" className="mt-4 px-8 py-4 text-brand-brown md:px-4 md:py-8">
           <div className="mx-auto max-w-[1100px]">
-            <div className="mb-[45px] max-w-[650px] md:mb-[70px]">
+            <div className="mb-[30px] max-w-[650px] md:mb-[30px]">
               <h2 className="font-serif text-2xl font-medium leading-[1.1]">
                 Work <span className="text-brand-accent">Experience</span>
               </h2>
@@ -85,12 +87,12 @@ function App() {
                     <div className="relative z-10 mt-[7px] h-3.5 w-3.5 rounded-full border-[3px] border-brand-cream bg-brand-accent shadow-[0_0_0_1px_var(--color-brand-ring)]" />
 
                     {index !== experiences.length - 1 && (
-                      <div className="absolute top-[21px] bottom-[-45px] w-px bg-brand-border" />
+                      <div className="absolute top-[21px] bottom-[30px] w-px bg-brand-border" />
                     )}
                   </div>
 
                   {/* Content */}
-                  <div className="mb-10 rounded-[18px] border border-brand-border bg-brand-card p-6 transition duration-300 ease-in-out hover:-translate-y-[3px] hover:shadow-[0_12px_30px_rgba(59,43,43,0.08)] last:mb-0 md:mb-[60px] md:last:mb-0 md:p-8">
+                  <div className="mb-20 rounded-[18px] border border-brand-border bg-brand-card p-8 transition duration-300 ease-in-out hover:-translate-y-[3px] hover:shadow-[0_12px_30px_rgba(59,43,43,0.08)] last:mb-0 md:mb-[60px] md:last:mb-0 md:p-8">
                     <div>
                       <div>
                         <span className="mb-3 inline-block text-xs font-semibold tracking-[0.08em] text-brand-muted">
@@ -135,7 +137,7 @@ function App() {
         </div>
 
         {/* Skill Section */}
-          <div id="skills" className="border border-brand-border mt-8 mb-0 bg-brand-cream px-[5%] py-10 text-brand-brown md:px-[7%] md:py-10">
+          <div id="skills" className="w-full bg-brand-cream mt-8 px-40 py-4 text-brand-brown md:px-4 md:py-8">
           <div className="mx-auto max-w-[1100px]">
             <div className="mb-[45px] max-w-[650px] md:mb-[70px]">
               <h2 className="font-serif text-2xl font-medium leading-[1.1]">

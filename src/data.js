@@ -96,25 +96,23 @@ export const skills = [
     desc: "Mocking Framework",
     dad: "1000",
   },
-];
-
-export const tools = [
-    {
-    id: 1,
+  {
+    id: 10,
     name: "IntelliJ IDEA",
     desc: "IDE",
     dad: "1200",
   },
   {
-    id: 2,
+    id: 11,
     name: "Postman",
     desc: "API Testing",
     dad: "1100",
   },
   {
-    id: 3,
+    id: 12,
     name: "Jira",
     desc: "Project Management",
     dad: "1300",
   }
 ];
+
