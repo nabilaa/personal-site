@@ -17,12 +17,13 @@ export const experiences = [
       "Spring Boot",
       "AWS",
       "Microservices",
+      "MongoDB",
       "PostgreSQL",
     ],
   },
   {
     period: "Feb 2015 - Sep 2025",
-    company: "Katuku",
+    company: "Kartuku",
     role: "Jr. Middleware Engineer",
     description:
       "",
@@ -35,7 +36,25 @@ export const experiences = [
     technologies: [
       "Java",
       "REST API",
-      "SQL",
+      "MySQL",
+    ],
+  },
+   {
+    period: "Jun 2014 - Aug 2014",
+    company: "Altrovis",
+    role: "Software Development Intern",
+    description:
+      "",
+    achievements: [
+      "Developed backend services and internal applications while working across the software development lifecycle.",
+      "Designed and implemented backend APIs.",
+      "Worked with relational databases and application integrations.",
+      "Participated in testing, deployment, and production support.",
+    ],
+    technologies: [
+      "C#",
+      "ASP.NET",
+      "SQL Server",
     ],
   },
 ]
@@ -76,51 +95,50 @@ export const skills = [
     name: "Mockito",
     desc: "Mocking Framework",
     dad: "1000",
-  }
-];
-
-export const tools = [
-  {
-    id: 5,
+  },
+   {
+    id: 7,
     name: "AWS",
     desc: "Cloud Platform",
     dad: "400",
   },
   {
-    id: 1,
+    id: 8,
     name: "Docker",
     desc: "Containerization",
     dad: "500",
   },
   {
-    id: 2,
+    id: 9,
     name: "Terraform",
     desc: "Infrastructure as Code",
     dad: "600",
-  },
+  }
+];
+
+export const tools = [
   {
-    id: 3,
+    id: 10,
     name: "IntelliJ IDEA",
     desc: "IDE",
     dad: "1200",
   },
   {
-    id: 4,
+    id: 11,
     name: "Postman",
     desc: "API Testing",
     dad: "1100",
   },
   {
-    id: 5,
+    id: 12,
     name: "Jira",
     desc: "Project Management",
     dad: "1300",
   },
   {
-    id: 6,
+    id: 13,
     name: "Confluence",
     desc: "Documentation",
     dad: "1300",
   }
 ];
-
