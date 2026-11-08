@@ -3,8 +3,7 @@ export const experiences = [
     period: "Oct 2016 - Mar 2025",
     company: "Traveloka",
     role: "Software Engineer",
-    description:
-    "",
+    description: "",
     achievements: [
       "Worked on backend services supporting hotel payment disbursement and post-booking operations.",
       "Built and maintained payment integration services and hotel payout processing.",
@@ -25,13 +24,11 @@ export const experiences = [
     period: "Feb 2015 - Sep 2025",
     company: "Kartuku",
     role: "Jr. Middleware Engineer",
-    description:
-      "",
+    description: "",
     achievements: [
-      "Developed backend services and internal applications while working across the software development lifecycle.",
-      "Designed and implemented backend APIs.",
-      "Worked with relational databases and application integrations.",
-      "Participated in testing, deployment, and production support.",
+      "Enhanced payment processing capabilities to support promotional campaigns and transaction handling.",
+      "Designed and developed an internal inventory management system for Point-of-Sale (POS) EDC devices, improving asset visibility and operational efficiency.",
+      "Modernized an order management platform by separating backend services from the frontend application, enabling independent development and improving maintainability.",
     ],
     technologies: [
       "Java",
@@ -39,17 +36,13 @@ export const experiences = [
       "MySQL",
     ],
   },
-   {
+  {
     period: "Jun 2014 - Aug 2014",
     company: "Altrovis",
     role: "Software Development Intern",
-    description:
-      "",
+    description: "",
     achievements: [
-      "Developed backend services and internal applications while working across the software development lifecycle.",
-      "Designed and implemented backend APIs.",
-      "Worked with relational databases and application integrations.",
-      "Participated in testing, deployment, and production support.",
+      "Developed a centralized regional management system to manage reference data shared across multiple BKKBN applications.",
     ],
     technologies: [
       "C#",
@@ -113,8 +106,8 @@ export const skills = [
     name: "Terraform",
     desc: "Infrastructure as Code",
     dad: "600",
-  }
-];
+  },
+]
 
 export const tools = [
   {
@@ -140,5 +133,5 @@ export const tools = [
     name: "Confluence",
     desc: "Documentation",
     dad: "1300",
-  }
-];
+  },
+]

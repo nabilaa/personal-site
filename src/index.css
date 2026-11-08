@@ -14,16 +14,14 @@ html {
 
 @theme {
   --font-handwriting: "Dancing Script", cursive;
-  --color-brand-cream: #f7f2ec;
-  --color-brand-brown: #2a2020;
+  --color-brand-brown: #2A2020;
   --color-brand-accent: #8E4D93;
   --color-brand-card: #FFF6F6;
-  --color-brand-border: #ded5cc;
-  --color-brand-ring: #a18d9f;
-  --color-brand-heading: #3b2b2b;
-  --color-brand-muted: #8b817b;
+  --color-brand-border: #DED5CC;
+  --color-brand-ring: #A18D9F;
+  --color-brand-heading: #3B2B2B;
+  --color-brand-muted: #8B817B;
   --color-brand-base: #F7E6E6;
   --color-brand-body: #4A1A2E;
-  --color-brand-grape: #7A2E4B;
   --color-brand-rose: #F3B6C8;
 }
